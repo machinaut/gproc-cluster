@@ -1,0 +1,23 @@
+Tools for setting up a little toy gproc cluster to play with
+
+Steps to setup your own
+=======================
+
+First clone the base image into directories numbered 0 through 7.
+Lucky for you, I made a script to do this. Just run:
+
+ $ ./makeclones.sh
+
+Then you need to start all of the virtual machines
+
+ $ ./launchclones.sh
+
+And since they're all running VNC for display, how about connect to all of
+their VNC servers.
+
+ $ ./connectclones.sh
+
+Then when you're done and want to get rid of them, delete all the nodes
+
+ $ ./cleanclones.sh
+
